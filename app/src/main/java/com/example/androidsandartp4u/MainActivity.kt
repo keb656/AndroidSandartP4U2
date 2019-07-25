@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val mLinearLayoutManager = GridLayoutManager(this, 2)
         val view = findViewById<View>(R.id.main_recyclerview) as RecyclerView
         view.layoutManager = mLinearLayoutManager
         view.adapter = myRecyclerViewAdapter()
